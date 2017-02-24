@@ -1,0 +1,63 @@
+<!-- Writer Bios -->
+<section class="about-section-writers">
+  <h2 class="attl-title">About the Writers</h2>
+  <div class="row">
+    <div class="col s0 m1 l1"> <!-- spacer column -->
+    </div>
+    <!-- writer bio cards -->
+    <div ng-repeat="writer in vm.writers" class="col s12 m5 l5">
+      <div class="card">
+        <div class="card-image">
+          <img ng-src="{{writer.photo}}">
+        </div>
+        <div class="card-content writer-bio">
+          <span class="card-title attl-title">{{writer.name}}</span>
+          <span class="card-title attl-subtitle">{{writer.title}}</span>
+          <p class="writer-bio-text" ng-repeat="paragraph in writer.bio">{{paragraph}}</p>
+        </div> <!-- end card-content -->
+      </div> <!-- end card -->
+    </div> <!-- end column -->
+    <div class="col s0 m1 l1"> <!-- spacer column -->
+    </div>
+  </div> <!-- end row -->
+</section>
+
+<!-- Actor Bios -->
+<section class="about-section-actors row">
+  <h2 class="attl-title grey-text text-lighten-4">About the Cast</h2>
+  <div class="row">
+    <div ng-repeat="actor in vm.actors track by $index" class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image actor-card-image">
+          <img class="actor-photo" ng-src="{{actor.photo}}">
+        </div>
+        <div class="card-content actor-bio">
+          <span class="card-title attl-title">{{actor.name}}</span>
+          <span class="card-title attl-subtitle">{{actor.character}}</span>
+          <p>{{actor.bio}}</p>
+        </div> <!-- end card content -->
+      </div> <!-- end card -->
+    </div> <!-- end column -->
+  </div> <!-- end row -->
+</section>
+
+<!-- Choreographer Bio -->
+<section class="about-section-choreographer row">
+  <h2 class="attl-title">About the Choreographer</h2>
+  <div class="row">
+    <div class="col s12 m12 l12">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img id="choreographer-photo" ng-src="{{choreographer.photo}}">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <span class="card-title attl-title">{{choreographer.name}}</span>
+          <span class="card-title attl-subtitle">{{choreographer.title}}</span>
+          <p>{{choreographer.bio}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

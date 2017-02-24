@@ -1,0 +1,145 @@
+.title-banner {
+  margin: 0;
+  padding: 25px;
+  background-color: $poster-purple;
+}
+
+.main-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#location-subtitle {
+  font-size: 30px;
+}
+
+/* showtimes section styling */
+
+.home-section-showtimes {
+  padding-bottom: 20px;
+}
+
+.showtimes-container {
+  margin-bottom: 30px;
+}
+
+.showtimes-table {
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+
+.showtimes-td {
+  padding: 5px 5px;
+}
+
+.attl-poster {
+  margin-top: 1.46rem;
+  margin-right: 1em;
+  max-height: 650px;
+  max-width: 100%;
+}
+
+.map-container {
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+ng-map {
+  height: 265px;
+  width: 100%;
+}
+
+/*  gallery section styling  */
+
+.home-section-gallery {
+  background-color: $poster-purple-dark;
+  min-height: 510px;
+}
+
+.gallery-thumbnail-box {
+  width: 9vw;
+  height: 9vw;
+  margin: 1%;
+  display: inline-block;
+}
+
+.gallery-thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.gallery-photo-container {
+  width: 44vw;
+}
+
+.gallery-photo {
+  max-height: 63vh;
+  max-width: 100%;
+  margin-top: 1%;
+  float: right;
+}
+
+/*  story section styling */
+
+.home-section-story {
+
+  margin-bottom: 7vh;
+
+  p {
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media(max-width:990px) {
+  .attl-poster {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .showtimes-table {
+    width: 80%;
+  }
+  ng-map {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-section-gallery {
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 400px;
+  }
+}
+
+@media(max-width:900px) {
+  .home-section-showtimes, .home-section-story {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media(max-width: 600px){
+  .gallery-thumbnail-box {
+    width: 120px;
+    height: 120px;
+    margin: 1%;
+    display: inline-block;
+  }
+}
+
+@media(max-width: 480px){
+  .showtimes-table {
+    width: 95%;
+  }
+  ng-map {
+    width: 95%;
+  }
+}

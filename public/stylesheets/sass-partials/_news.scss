@@ -1,0 +1,54 @@
+.newsreel-section {
+  padding-top: 0;
+}
+
+.news-article {
+  border: 1px solid #d0d0d0;
+  padding: 20px 8vw 20px 8vw;
+}
+
+.article-title {
+  margin-bottom: 1em;
+  font-size: 30px;
+}
+
+.article-underline {
+  background-color: #d0d0d0;
+  width: 90%;
+  height: 1px;
+  margin: 0 auto 2em auto;
+}
+
+.article-text {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.large-quote {
+  font-family: $font-title;
+  font-size: 25px;
+  margin: 4vh 0 1vh 0;
+  text-align: center;
+}
+
+.quote-container {
+  margin-bottom: 2em;
+}
+
+.quote-author {
+  text-align: center;
+  font-size: 22px;
+}
+
+.quote-author-title {
+  font-size: 17px;
+}
+
+@media(max-width:600px){
+  .newsreel-section {
+    padding: 0;
+  }
+  .news-article {
+    padding: 20px 1vw 20px 1vw;
+  }
+}

@@ -1,0 +1,114 @@
+$poster-blue: #4D6C94;
+$poster-blue-light: #5E84B5;
+$poster-blue-dark: #3D5575;
+$poster-purple: #A4717C;
+$poster-purple-dark: #50393F;
+$font-title: 'Libre Baskerville', serif;
+$font-main: 'Open Sans', sans-serif;
+
+@import './sass-partials/home';
+@import './sass-partials/news';
+@import './sass-partials/about';
+@import './sass-partials/contact';
+
+* {
+  font-family: $font-main;
+  color: #4A4B4C;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* elements uniform styling */
+
+main {
+  min-height: 90vh;
+  width: 100%;
+  clear: both;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 25px 12.5vw 25px 12.5vw;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+/* overriding materialize */
+
+.container {
+  width: 75%;
+}
+
+/* color scheme helper styles */
+
+.attl-blue {
+  background-color: $poster-blue;
+}
+
+.attl-blue-dark {
+  background-color: $poster-blue-dark;
+}
+
+/*  font styling */
+
+.detail {
+  font-size: 20px;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+/* headers */
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+h2.attl-title {
+  margin: 5vh auto 5vh auto;
+}
+
+.attl-title {
+  font-family: $font-title;
+}
+
+.attl-logo {
+  margin-left: 10px;
+}
+
+/*  footer styling  */
+
+.footer-links {
+  li {
+    text-align: right;
+  }
+}
+
+#attl-footer {
+  background-color: $poster-blue;
+}
+
+/*  media queries  */
+
+@media(max-width:1050px){
+  section {
+    padding: 25px 10vw 25px 10vw;
+  }
+}
+
+@media(max-width:800px){
+  section {
+    padding: 25px 5vw 25px 5vw;
+  }
+  .container {
+    width: 98%;
+  }
+}

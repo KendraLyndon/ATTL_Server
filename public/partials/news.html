@@ -1,0 +1,20 @@
+<section class="newsreel-section">
+  <h2 class="attl-title">In the News</h2>
+
+  <!-- news articles-->
+  <div class="news-article z-depth-1" ng-repeat="event in vm.news">
+    <h4 class="attl-title article-title">{{event.title}}</h4>
+    <hr class="article-underline"/>
+    <div ng-repeat="quote in event.quotes" class="quote-container">
+      <p class="large-quote">
+        {{quote.content}}
+      </p>
+      <p class="quote-author">
+        - {{quote.author}} <span class="quote-author-title">{{quote.authorTitle}}</span>
+      </p>
+    </div>
+    <p ng-repeat="paragraph in event.text" class="article-text">
+      {{paragraph}}
+    </p>
+  </div>
+</section>

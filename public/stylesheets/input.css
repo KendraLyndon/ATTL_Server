@@ -1,0 +1,257 @@
+.title-banner {
+  margin: 0;
+  padding: 25px;
+  background-color: #A4717C; }
+
+.main-title {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+#location-subtitle {
+  font-size: 30px; }
+
+/* showtimes section styling */
+.home-section-showtimes {
+  padding-bottom: 20px; }
+
+.showtimes-container {
+  margin-bottom: 30px; }
+
+.showtimes-table {
+  width: 85%;
+  margin: 0 auto 0 auto; }
+
+.showtimes-td {
+  padding: 5px 5px; }
+
+.attl-poster {
+  margin-top: 1.46rem;
+  margin-right: 1em;
+  max-height: 650px;
+  max-width: 100%; }
+
+.map-container p {
+  margin-bottom: 10px;
+  text-align: center; }
+
+ng-map {
+  height: 265px;
+  width: 100%; }
+
+/*  gallery section styling  */
+.home-section-gallery {
+  background-color: #50393F;
+  min-height: 510px; }
+
+.gallery-thumbnail-box {
+  width: 9vw;
+  height: 9vw;
+  margin: 1%;
+  display: inline-block; }
+
+.gallery-thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: inline-block;
+  overflow: hidden; }
+
+.gallery-photo-container {
+  width: 44vw; }
+
+.gallery-photo {
+  max-height: 63vh;
+  max-width: 100%;
+  margin-top: 1%;
+  float: right; }
+
+/*  story section styling */
+.home-section-story {
+  margin-bottom: 7vh; }
+  .home-section-story p {
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px; }
+
+@media (max-width: 990px) {
+  .attl-poster {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+
+  .showtimes-table {
+    width: 80%; }
+
+  ng-map {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .home-section-gallery {
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 400px; } }
+@media (max-width: 900px) {
+  .home-section-showtimes, .home-section-story {
+    padding-left: 0;
+    padding-right: 0; } }
+@media (max-width: 600px) {
+  .gallery-thumbnail-box {
+    width: 120px;
+    height: 120px;
+    margin: 1%;
+    display: inline-block; } }
+@media (max-width: 480px) {
+  .showtimes-table {
+    width: 95%; }
+
+  ng-map {
+    width: 95%; } }
+.newsreel-section {
+  padding-top: 0; }
+
+.news-article {
+  border: 1px solid #d0d0d0;
+  padding: 20px 8vw 20px 8vw; }
+
+.article-title {
+  margin-bottom: 1em;
+  font-size: 30px; }
+
+.article-underline {
+  background-color: #d0d0d0;
+  width: 90%;
+  height: 1px;
+  margin: 0 auto 2em auto; }
+
+.article-text {
+  font-size: 18px;
+  margin-bottom: 1em; }
+
+.large-quote {
+  font-family: "Libre Baskerville", serif;
+  font-size: 25px;
+  margin: 4vh 0 1vh 0;
+  text-align: center; }
+
+.quote-container {
+  margin-bottom: 2em; }
+
+.quote-author {
+  text-align: center;
+  font-size: 22px; }
+
+.quote-author-title {
+  font-size: 17px; }
+
+@media (max-width: 600px) {
+  .newsreel-section {
+    padding: 0; }
+
+  .news-article {
+    padding: 20px 1vw 20px 1vw; } }
+/* titles */
+.attl-subtitle {
+  font-size: 20px !important; }
+
+/*  writer section styling  */
+.writer-bio {
+  max-height: 500px;
+  overflow-y: scroll; }
+
+.writer-bio-text {
+  margin-bottom: 10px !important; }
+
+#choreographer-photo {
+  width: 300px;
+  object-fit: cover; }
+
+/*  actor section styling  */
+.about-section-actors {
+  clear: both;
+  background-color: #50393F;
+  margin-bottom: 0; }
+
+.actor-photo {
+  max-height: 300px;
+  object-fit: cover; }
+
+.actor-bio {
+  max-height: 300px;
+  overflow-y: scroll; }
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #4A4B4C;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* elements uniform styling */
+main {
+  min-height: 90vh;
+  width: 100%;
+  clear: both; }
+
+section {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 25px 12.5vw 25px 12.5vw;
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter; }
+
+/* overriding materialize */
+.container {
+  width: 75%; }
+
+/* color scheme helper styles */
+.attl-blue {
+  background-color: #4D6C94; }
+
+.attl-blue-dark {
+  background-color: #3D5575; }
+
+/*  font styling */
+.detail {
+  font-size: 20px; }
+
+.lighter {
+  font-weight: lighter; }
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  text-align: center; }
+
+h2.attl-title {
+  margin: 5vh auto 5vh auto; }
+
+.attl-title {
+  font-family: "Libre Baskerville", serif; }
+
+.attl-logo {
+  margin-left: 10px; }
+
+/*  footer styling  */
+.footer-links li {
+  text-align: right; }
+
+#attl-footer {
+  background-color: #4D6C94; }
+
+/*  media queries  */
+@media (max-width: 1050px) {
+  section {
+    padding: 25px 10vw 25px 10vw; } }
+@media (max-width: 800px) {
+  section {
+    padding: 25px 5vw 25px 5vw; }
+
+  .container {
+    width: 98%; } }
+
+/*# sourceMappingURL=input.css.map */

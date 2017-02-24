@@ -1,0 +1,74 @@
+<!-- Title -->
+<div class="card-panel lighten-2 title-banner">
+  <h1 class="attl-title main-title grey-text text-lighten-4">A Time To Live</h1>
+  <h4 class="attl-title grey-text text-lighten-4">A new musical inspired by a 3000 year old story</h4>
+</div>
+
+<!-- Showtimes, Poster & Map -->
+<section class="home-section-showtimes row">
+  <!-- Poster -->
+  <div class="col s12 m12 l6">
+    <img class="attl-poster z-depth-2" src="../img/poster-copy.jpg" alt="poster" />
+  </div>
+  <!-- showtimes, map column -->
+  <div class="col s12 m12 l6 showtimes-map-column">
+    <!-- showtimes -->
+    <div class="showtimes-container">
+      <h4 class="attl-title">Showtimes <span class="detail">(Free Admisison)</span></h4>
+      <table class="showtimes-table">
+        <thead>
+          <tr>
+            <th class="showtimes-td" data-field="date">Date</th>
+            <th class="showtimes-td" data-field="day"></th>
+            <th class="showtimes-td right" data-field="time">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="showtime in vm.showtimes">
+            <td class="showtimes-td">{{showtime.date}}</td>
+            <td class="showtimes-td">{{showtime.day}}</td>
+            <td class="showtimes-td right">{{showtime.time}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- end showtimes -->
+    <!-- map -->
+    <div class="map-container">
+      <h4 class="attl-title" id="location-subtitle">At Newport Covenant Church</h4>
+      <p>
+        12800 SE Coal Creek Pkwy Bellevue, WA 98006
+      </p>
+      <ng-map class="z-depth-1" center="47.5646,-122.1700" zoom="16">
+        <marker position="[47.5646, -122.1700]" />
+      </ng-map>
+    </div> <!-- end map -->
+  </div> <!-- end column -->
+</section>
+
+<!-- photo gallery -->
+<section class="home-section-gallery gallery">
+  <div class="row">
+    <div class="gallery-icon-container col s12 m5 l5">
+      <div ng-repeat="photo in vm.photos track by $index" ng-click="changeSelectedPhoto(photo.source)" class="gallery-thumbnail-box">
+        <img class="z-depth-1 gallery-thumbnail" ng-src="{{photo.source}}" alt="gallery-thumbnail"/>
+      </div>   <!-- end icon box  -->
+    </div>   <!-- end icon container  -->
+    <div class="gallery-photo-container col s12 m7 l7">
+      <img ng-src="{{selectedPhoto}}" class="z-depth-1 gallery-photo" alt="gallery photo"/>
+    </div> <!-- end gallery photo container -->
+  </div> <!-- end row -->
+</section> <!-- end gallery -->
+
+<!-- the story -->
+<section class="home-section-story row">
+  <h2 class="attl-title">The Story</h2>
+  <p>
+    Bethlehem is abuzz at the return of Naomi to her hometown - ten years after her husband moved her and their two sons to neighboring (and despised) Moab. She returns penniless, childless, and a widow. She also brings her Moabite daughter-in-law, Ruth, who wants desperately to belong to this community and to help her beloved mother-in-law.
+  </p>
+  <p>
+    Naomi is viewed as having 'gone over to the enemy' for the move to Moab.  Ruth is treated with suspicion and harsh prejudice. Wicked and miserly Uncle Nemuel wants Naomi's land for his own and will stop at nothing to get it. Naomi is determined not only to keep the land but also to build a heritage for herself and her devoted but headstrong daughter-in-law.
+  </p>
+  <p>
+    But then a most unlikely suitor, Boaz, falls in love with Ruth...and what could be the women's salvation could also bring about their undoing.
+  </p>
+</section>
