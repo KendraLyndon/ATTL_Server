@@ -11,19 +11,21 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-router.post('/email', function(req,req,next){
-
+router.post('/email', function(req, res, next){
+  console.log(req.body);
   //  setup email data
   let mailOptions = {
       from: '"ATTL" <attl.contact.proxy@gmail.com>', // sender address
       to: 'kendralyndon@gmail.com', // list of receivers
-      subject: 'hello', // Subject line
-      text: 'Hi Kendra, if you\'re getting this we have success!', // plain text body
-      html: '<b>Hi Kendra, if you\'re getting this we have success!</b>' // html body
+      subject: 'category: ' + req.body.category + ' subject: ' + req.body.subject, // Subject line
+      text: req.body.message, // plain text body
+      html: `<p><b>REPLY TO:</b> ${req.body.email}</p>
+              <p>${req.body.message}</p>`  // html body
   };
 
   // send mail with defined transport object
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(
+    mailOptions, (error, info) => {
       if (error) {
           return console.log(error);
       }

@@ -1,26 +1,37 @@
 <section class="section-contact">
   <h2 class="attl-title">Contact Us</h2>
-  <p>
-    Category
-  </p>
-  <select form="contact-form" name="category" id="contact-category" class="browser-default">
-    <option value="feedback">Feedback</option>
-    <option value="licensing">Licensing</option>
-  </select>
-  <form id="contact-form" ng-submit="processForm()">
-    <label for="name">Your name *</label>
-    <input type="text" name="name" ng-model="formData.name"/>
-    <label for="organization">Organization</label>
-    <input type="text" name="organization" ng-model="formData.organization"/>
-    <label for="email">Your email address *</label>
-    <input type="text" name="email" ng-model="formData.email"/>
-    <label for="subject">Subject *</label>
-    <input type="text" name="subject" ng-model="formData.subject"/>
-    <label for="message">Message *</label>
-    <input type="text" name="message" id="contact-message" ng-model="formData.message"/>
-    <input type="submit" />
-  </form>
+  <div class="form-container">
+    <form id="contact-form" ng-submit="processForm()">
+      <div class="row">
+        <div class="col m6 l6">
+          <label for="category">Category</label>
+          <select form="contact-form" name="category" id="contact-category" class="browser-default" ng-model="formData.category">
+            <option value="feedback" selected>Feedback</option>
+            <option value="licensing">Licensing</option>
+          </select>
+        </div>
+        <div class="col m6 l6">
+          <label for="name">Your name *</label>
+          <input type="text" name="name" class="attl-input" ng-model="formData.name"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m6 l6">
+          <label for="email">Your email address *</label>
+          <input type="text" name="email" class="attl-input" ng-model="formData.email"/>
+        </div>
+        <div class="col m6 l6">
+          <label for="subject">Subject *</label>
+          <input type="text" name="subject" class="attl-input" ng-model="formData.subject"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m12 l12">
+          <label for="message">Message *</label>
+          <input type="text" name="message" id="contact-message" class="attl-input" ng-model="formData.message"/>
+        </div>
+      </div>
+      <button type="submit" id="contact-submit">Send</button>
+    </form>
+  </div>
 </section>
-<pre>
-    {{ formData }}
-</pre>
