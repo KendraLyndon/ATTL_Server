@@ -12,7 +12,6 @@ let transporter = nodemailer.createTransport({
 });
 
 router.post('/email', function(req, res, next){
-  console.log(req.body);
   //  setup email data
   let mailOptions = {
       from: '"ATTL" <attl.contact.proxy@gmail.com>', // sender address
